@@ -8,7 +8,7 @@ int main(){
     int result = 0;
     int index = 0;
     int no = 0;
-    // index = loadData(sp);
+     index = loadData(sp);
     if (index == 0) printf("=>파일 없음\n");
     while (1) {
         menu = selectMenu();
@@ -36,7 +36,7 @@ int main(){
             } else
                 printf("=> 취소됨!\n");
         } else if (menu == 5) {
-            // saveData(sp, count);
+            saveData(sp, count);
         }
     }
     printf("종료됨!\n");
