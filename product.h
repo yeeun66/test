@@ -1,3 +1,5 @@
+#ifndef _PRODUCT1_H_
+#define _PRODUCT1_H_
 #include <stdio.h>
 #include <string.h>
 
@@ -10,4 +12,5 @@ typedef struct{
 int createProduct(Product *p);
 void readProduct(Product *p); 
 int updateProduct(Product *p);   
-int deleteProduct(Product *p);       
+int deleteProduct(Product *p);
+#endif

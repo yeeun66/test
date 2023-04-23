@@ -1,17 +1,19 @@
 #include "product.h"
 
 int createProduct(Product *p){
+    getchar();
     printf("\n");
     printf("제품명은? ");
-    scanf("%[^\n]s",p->name);
+    fgets(p->name, 60, stdin);
+    p->name[strlen(p->name)-1] = '\0';
 
     printf("중량은? ");
     scanf("%d",&p->weight);
 
     printf("가격은? ");
     scanf("%d",&p->price);
-    
-    printf("==> 추가됨\n"); 
+
+    printf("==> 추가됨\n");
     return 1;
 }
 
