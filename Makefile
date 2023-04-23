@@ -6,3 +6,7 @@ product.o : product.c product.h
 	gcc -c product.c
 clean :
 	rm *.o market
+
+
+
+
