@@ -69,3 +69,7 @@ int loadData(Product *p){
     printf("=> 로딩 성공!\n");
     return count;
 }
+
+
+
+//
